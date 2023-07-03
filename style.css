@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap');
+
+
+body{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+
+}
+h1{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    cursor:pointer;
+
+}
+.bigtext{
+    color: aliceblue;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    animation: flicker 1.5s infinite alternate;
+   
+}
+
+.bigtext:hover{
+    transition: opacity 1s easeIn 1s;
+    transform: translate(0px 0px 0px);
+    transform-style: preserve-3d;
+   
+
+}
+.bigtext::after{
+    transition: 2s;
+}
+
+.countdown-t {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px #c3b4b498;
+
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 100px rgba(0, 255, 170, 0.508),
+        0 0 150px rgba(0, 255, 170, 0.386);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
