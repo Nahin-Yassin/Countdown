@@ -19,6 +19,17 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
 }
+p.copyright {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 45rem;
+    text-align: center;
+    color: #b8b8b8;
+    left: 100;
+    right: 0;
+    margin: auto;
+    font-size: 13px;
+}
 .countdown-container{
     display: flex;
     flex-wrap: wrap;
