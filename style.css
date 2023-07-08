@@ -33,8 +33,7 @@ h1{
     font-size: 6rem;
     line-height: 1;
     margin: 0 2rem;
-    animation: flicker 1.5s infinite alternate;
-   
+    transition: 2ms;
 }
 
 .bigtext:hover{
