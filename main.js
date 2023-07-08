@@ -3,7 +3,7 @@ const hoursEL = document.getElementById('hours')
 const minsEl = document.getElementById('min')
 const secEL = document.getElementById('sec')
 
-const getToDate = ("1 Jan 2024")
+const getToDate = ("12 Sep 2023")
 
 function countdown() {
     const newYearDate = new Date(getToDate);
